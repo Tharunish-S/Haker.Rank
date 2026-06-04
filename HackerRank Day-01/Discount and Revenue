@@ -1,1 +1,30 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        float p= sc.nextFloat();
+        float dis= 0;
+        float tot =0;
+        float q= sc.nextFloat();
+        float r =p*q;
+    
+        if(r>5000){
+            dis = r/10;
+            System.out.printf("The discount is Rs.%.2f\n",dis);
+            tot= r-dis;
+            System.out.printf("The net revenue is Rs.%.2f\n",tot);
+        }
+        else{
+            System.out.println("The discount is Rs."+(int)dis);
+            System.out.printf("The net revenue is Rs.%.2f",r);
+            
+            
+            }
+        
+        
+    }
+}
 
